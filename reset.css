@@ -1,0 +1,94 @@
+/* reset.css */
+/* Reset CSS moderno com melhorias para acessibilidade, usabilidade e compatibilidade */
+
+/* 1. Define box-sizing global com border-box */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Suaviza rolagens */
+}
+
+/* 3. Estilos básicos para body */
+body {
+  font-family: sans-serif;
+  font-size: 100%;        /* 16px padrão com base no html */
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. Remove estilos padrão de listas */
+ol, ul {
+  list-style: none;
+}
+
+/* 5. Remove decoração e cor padrão de links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Normaliza tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 7. Elementos HTML5 como bloco (para compatibilidade com navegadores antigos) */
+article, aside, details, figcaption, figure,
+footer, header, main, nav, section, summary {
+  display: block;
+}
+
+/* 8. Remove aspas automáticas de blockquote e q */
+blockquote, q {
+  quotes: none;
+}
+
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+}
+
+/* 9. Estiliza inputs e botões para neutralizar estilos nativos */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none; /* Substituído por foco visível abaixo */
+  appearance: none;
+}
+
+/* 10. Estilo de foco acessível (para navegação por teclado) */
+:focus-visible {
+  outline: 2px solid #005fcc;   /* Azul visível, pode ser customizado */
+  outline-offset: 2px;
+}
+
+/* 11. Elementos multimídia responsivos por padrão */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 12. Cabeçalhos sem margens iniciais */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  font-size: 100%;
+  margin: 0;
+}
